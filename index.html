@@ -8,53 +8,57 @@
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-<div class="bl-background">
-    <div class="bl-list">
-        <div class="topline">
-            <input type="text" placeholder="Назва товару" class="input">
-            <button class="addbutton">Купити</button>
-        </div>
-        <div class="line">
-            Помідори
+<div class="container">
+    <div class="bl-background">
+        <div class="bl-list">
+            <div class="topline">
+                <input type="text" placeholder="Назва товару" class="input">
+                <button class="addbutton" data-tooltip="Додати до кошику">Купити</button>
+            </div>
+            <div class="line">
+                Помідори
+                <button class="removebutton" data-tooltip="Видалити з кошику">x</button>
+                <button class="buybutton" data-tooltip="Додати до списку купленого">Куплено</button>
+                <button class="plusbutton" data-tooltip="Збільшити кількість на 1">+</button>
+                <span class="amount">1</span>
+                <button class="minusbutton" data-tooltip="Зменшити кількість на 1">-</button>
 
+            </div>
+            <div class="line">
+                Сир
+                <button class="removebutton" data-tooltip="Видалити з кошику">x</button>
+                <button class="buybutton" data-tooltip="Додати до списку купленого">Куплено</button>
+                <button class="plusbutton" data-tooltip="Збільшити кількість на 1">+</button>
+                <span class="amount">1</span>
+                <button class="minusbutton" data-tooltip="Зменшити кількість на 1">-</button>
+            </div>
+            <div class="lastline">
+                Печиво
+                <button class="removebutton" data-tooltip="Видалити з кошику">x</button>
+                <button class="buybutton" data-tooltip="Додати до списку купленого">Куплено</button>
+                <button class="plusbutton" data-tooltip="Збільшити кількість на 1">+</button>
+                <span class="amount">1</span>
+                <button class="minusbutton" data-tooltip="Зменшити кількість на 1">-</button>
+            </div>
+        </div>
+        <div class="bl-bought">
+            <div class="bl-title"><span class="title">Залишилося</span></div>
+            <div class="remain-list">
+                <span class="unit">Помідори<span class="counter">1</span></span>
+                <span class="unit">Печиво<span class="counter">1</span></span>
+                <span class="unit">Сир<span class="counter">1</span></span>
+            </div>
+            <div class="bl-title"><span class="title">Куплено</span></div>
+            <div class="bought-list">
 
-            <button class="removebutton">x</button>
-            <button class="buybutton">Куплено</button>
-            <button class="plusbutton">+</button>
-            <span class="amount">1</span>
-            <button class="minusbutton">-</button>
-
+            </div>
         </div>
-        <div class="line">
-            Сир
-            <button class="removebutton">x</button>
-            <button class="buybutton">Куплено</button>
-            <button class="plusbutton">+</button>
-            <span class="amount">1</span>
-            <button class="minusbutton">-</button>
-        </div>
-        <div class="lastline">
-            Печиво
-            <button class="removebutton">x</button>
-            <button class="buybutton">Куплено</button>
-            <button class="plusbutton">+</button>
-            <span class="amount">1</span>
-            <button class="minusbutton">-</button>
-        </div>
-    </div>
-    <div class="bl-bought">
-        <div class="bl-title"><span class="title">Залишилося</span></div>
-        <div class="remain-list">
-            <span class="unit">Помідори<span class="counter">1</span></span>
-            <span class="unit">Печиво<span class="counter">1</span></span>
-            <span class="unit">Сир<span class="counter">1</span></span>
-        </div>
-        <div class="bl-title"><span class="title">Куплено</span></div>
-        <div class="bought-list">
-
+        <div class="bage">
+            <span class="bagetitle"> Buy List</span>
+            <p class="name">Created by:
+                Stanislav Telizhenko</p>
         </div>
     </div>
 </div>
-
 </body>
 </html>
