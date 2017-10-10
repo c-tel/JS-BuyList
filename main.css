@@ -238,7 +238,7 @@ button:hover::after {
 
 .bage:hover {
     background-color: darkblue;
-    transform: translateY(-100px) rotate(360deg);
+    transform: translateY(-100px);
 }
 
 .bagetitle {
