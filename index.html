@@ -10,47 +10,38 @@
 <body>
 <div class="container">
     <div class="bl-background">
-        <div class="bl-list">
-            <div class="topline">
-                <input type="text" placeholder="Назва товару" class="input">
-                <button class="addbutton" data-tooltip="Додати до кошику">Купити</button>
-            </div>
-            <div class="line">
-                Помідори
-                <button class="removebutton" data-tooltip="Видалити з кошику">x</button>
-                <button class="buybutton" data-tooltip="Додати до списку купленого">Куплено</button>
-                <button class="plusbutton" data-tooltip="Збільшити кількість на 1">+</button>
-                <span class="amount">1</span>
-                <button class="minusbutton" data-tooltip="Зменшити кількість на 1">-</button>
-
-            </div>
-            <div class="line">
-                Сир
-                <button class="removebutton" data-tooltip="Видалити з кошику">x</button>
-                <button class="buybutton" data-tooltip="Додати до списку купленого">Куплено</button>
-                <button class="plusbutton" data-tooltip="Збільшити кількість на 1">+</button>
-                <span class="amount">1</span>
-                <button class="minusbutton" data-tooltip="Зменшити кількість на 1">-</button>
-            </div>
-            <div class="lastline">
-                Печиво
-                <button class="removebutton" data-tooltip="Видалити з кошику">x</button>
-                <button class="buybutton" data-tooltip="Додати до списку купленого">Куплено</button>
-                <button class="plusbutton" data-tooltip="Збільшити кількість на 1">+</button>
-                <span class="amount">1</span>
-                <button class="minusbutton" data-tooltip="Зменшити кількість на 1">-</button>
+        <div class="left">
+            <div class="bl-list">
+                <div class="topline">
+                    <input type="text" placeholder="Назва товару" class="input-item">
+                    <button class="addbutton" data-tooltip="Додати до кошику">Купити</button>
+                </div>
+                <template class="itemTemplate">
+                    <div class="line">
+                        <div class="itemtitle"></div>
+                        <div class="item">
+                            <input type="text" placeholder="" class="edit-item">
+                            <button class="removebutton" data-tooltip="Видалити з кошику">x</button>
+                            <button class="buybutton" data-tooltip="Додати до списку купленого">Куплено</button>
+                            <button class="plusbutton" data-tooltip="Збільшити кількість на 1">+</button>
+                            <span class="amount">1</span>
+                            <button class="minusbutton" data-tooltip="Зменшити кількість на 1">-</button>
+                        </div>
+                    </div>
+                </template>
             </div>
         </div>
-        <div class="bl-bought">
-            <div class="bl-title"><span class="title">Залишилося</span></div>
-            <div class="remain-list">
-                <span class="unit">Помідори<span class="counter">1</span></span>
-                <span class="unit">Печиво<span class="counter">1</span></span>
-                <span class="unit">Сир<span class="counter">1</span></span>
-            </div>
-            <div class="bl-title"><span class="title">Куплено</span></div>
-            <div class="bought-list">
-
+        <div class="right">
+            <div class="bl-bought">
+                <div class="bl-title"><span class="title">Залишилося</span></div>
+                <div class="remain-list">
+                    <template class="rightTemplate">
+                        <span class="unit"><span class = "unittitle" >      </span>   <span class="counter"></span></span>
+                    </template>
+                </div>
+                <div class="bl-title"><span class="title">Куплено</span></div>
+                <div class="bought-list">
+                </div>
             </div>
         </div>
         <div class="bage">
@@ -60,5 +51,7 @@
         </div>
     </div>
 </div>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>

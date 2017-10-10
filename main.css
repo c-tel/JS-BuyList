@@ -1,70 +1,84 @@
-.bl-background {
+.container {
     background: #cdcbcb;
-    padding: 3%;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
-    position: fixed;
-    overflow: auto;
     top: 0;
     left: 0;
+    position: fixed;
+    overflow: auto;
 }
-
-.bl-list {
-    margin-top: 70px;
-    margin-left: 5%;
-    margin-right: 10px;
-    background: white;
-    margin-bottom: 10px;
+.bl-background {
+    /*padding: 100px 20px 100px 70px;*/
+    padding-top: 100px;/*Dasha*/
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    horiz-align: center;
+}
+/*By Dasha*/
+.left, .right {
+    /*max-width: 600px;*/
+    display: inline-block;
+    padding: 10px;
+    width: 59%;
     float: left;
-    border-radius: 2px;
-    width: 50%;
-    height: 40%;
+    /*margin-left: 5%;*/
+}
+.right {
+    width: 31%;!important;
+}
+.bl-list {
+    /*margin-top: 70px;*/
+    /*margin-left: 5%;*/
+    /*margin-right: 10px;*/
+    background: white;
+    /*margin-bottom: 10px;*/
+    /*float: left;*/
+    border-radius: 5px;
+    /*width: 50%;*/
+    /*height: 40%;*/
     /*min-width: 650px;*/
     /*min-height: 170px;*/
     /*max-width: 670px;*/
-    max-height: 200px;
+    /*max-height: 200px;*/
 }
 
 .bl-bought {
     border-radius: 2px;
-    margin-top: 70px;
-    margin-left: 5%;
+    /*margin-top: 70px;*/
+    /*margin-left: 5%;*/
     background: white;
-    float: left;
-    width: 30%;
+    /*float: left;*/
+    /*width: 25%;*/
     /*max-width: 500px;*/
     /*max-height: 280px;*/
     /*min-width: 250px;*/
 }
 
-.topline {
-    height: 25%;
+.topline{
+    padding: 12px;
+    height: 18%;
     box-sizing: border-box;
-    padding: 0.5%;
-    padding-bottom: 0.2%;
-    border-bottom: solid grey 1px;
+    /*padding: 0.5%;*/
 }
 
 .line {
-    height: 25%;
+    height: 18%;
     box-sizing: border-box;
-    padding: 1%;
-    padding-top: 2%;
-    border-bottom: solid grey 1px;
+    padding: 10px;
+    border-top: solid grey 1px;
+    background-color: white;
 }
-
-.lastline {
-    height: 25%;
-    box-sizing: border-box;
-    padding: 1%;
-    padding-top: 2%;
-    /*border-bottom: solid grey 1px;*/
+.item{
+    display: inline;
 }
-
-.input {
-    width: 75%;
-    height: 88%;
+.input-item {
+    padding: 8px;
+    width: 85%;
+    height: 30px;
     margin: 0;
     box-sizing: border-box;
     border-bottom-left-radius: 5px;
@@ -72,13 +86,13 @@
 }
 
 .addbutton {
-    height: 88%;
+    height: 30px;
     font-weight: 200;
     color: white;
     background-color: #2185D0;
     border-color: #2185D0;
     box-sizing: border-box;
-    width: 25%;
+    width: 15%;
     float: right;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -101,7 +115,9 @@
     /*width:5%*/
     /*height: 100%;*/
 }
-
+.itemtitle{
+    display:inline-block;
+}
 button::after {
     background: darkviolet;
     border-radius: 8px 8px 8px 8px;
@@ -118,9 +134,7 @@ button::after {
 button:hover::after {
     transform: scale(1);
     transition: all 1s ease-in-out;
-
 }
-
 .minusbutton {
     color: white;
     font-weight: 300;
@@ -145,14 +159,13 @@ button:hover::after {
 .amount {
     border-color: #E8E8E8;
     border-radius: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: #E8E8E8;
     float: right;
-    width: 2%;
     padding-top: 1px;
     padding-bottom: 1px;
-    padding-left: 6px;
+    padding-left: 1px;
 
 }
 
@@ -176,26 +189,31 @@ button:hover::after {
     padding-bottom: 2.5%;
     border-bottom: solid grey 1px;
 }
-
+.edit-item{
+    display: none;
+}
 .unit {
-    border-radius: 10%;
-    padding: 1.5%;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 0;
     font-size: 17px;
     height: 30px;
-    margin-left: 2%;
-    margin-top: 10%;
+    margin-left: 3px;
+    margin-top: 3px;
     background-color: lightgrey;
 }
 
 .counter {
-    margin-left: 3px;
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    font-size: 12px;
-    padding: 1%;
-    padding-left: 1.5%;
-    padding-bottom: 1.5%;
+    margin-left: 0;
+    /*display: inline-block;*/
+    height: 15px;
+    width: 15px;
+    font-size: 15px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: orange;
     border-radius: 100%;
 }
@@ -214,13 +232,13 @@ button:hover::after {
     background-color: darkviolet;
     padding-top: 30px;
     padding-left: 45px;
-    transition: all 1s ease;
+    transition: all 1.4s ease;
     border-radius: 10px 10px 0 0;
 }
 
 .bage:hover {
     background-color: darkblue;
-    transform: translateY(-60px);
+    transform: translateY(-100px) rotate(360deg);
 }
 
 .bagetitle {
@@ -250,11 +268,11 @@ button:hover::after {
 }
 
 @media (max-width: 500px) {
-    .bl-bought {
+    .right {
         width: 100%;
     }
 
-    .bl-list {
+    .left {
         width: 100%;
     }
 }
